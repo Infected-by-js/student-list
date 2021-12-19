@@ -1,0 +1,8 @@
+.students-list {
+	flex: 1;
+	overflow-y: auto;
+
+	li:not(li:last-child) {
+		margin-bottom: 2rem;
+	}
+}

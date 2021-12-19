@@ -1,0 +1,71 @@
+.student {
+	background-color: white;
+	padding: 1.25rem 2rem;
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 2rem;
+
+	.photo {
+		margin-right: 1rem;
+		border-radius: 50%;
+		width: 50px;
+		height: 50px;
+	}
+
+	&__buttons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+
+		border: 0;
+		background-color: transparent;
+		cursor: pointer;
+
+		opacity: 0.3;
+
+		&:hover {
+			opacity: 1;
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+.column {
+	margin-right: 1rem;
+	padding: 1rem;
+
+	&__top {
+		font-size: 1.25rem;
+		color: gray;
+		margin-bottom: 4px;
+	}
+
+	&__bottom {
+		font-size: 1.25rem;
+
+		&_name {
+			text-transform: capitalize;
+			font-weight: 700;
+		}
+
+		&_gender {
+			text-transform: capitalize;
+		}
+
+		&_amount {
+			font-weight: 700;
+		}
+	}
+}

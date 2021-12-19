@@ -1,0 +1,25 @@
+.button {
+	padding: 1.5rem 2rem;
+	font-size: 1.25rem;
+	font-weight: 300;
+	border-radius: 30px;
+	border: 0;
+	color: black;
+	background-color: lightgrey;
+
+	cursor: pointer;
+	transition: color 200ms ease, background-color 200ms ease;
+
+	&:hover {
+		background-color: darken($color: lightgrey, $amount: 10);
+	}
+
+	&__primary {
+		color: white;
+		background-color: lightblue;
+
+		&:hover {
+			background-color: darken($color: lightblue, $amount: 10);
+		}
+	}
+}
